@@ -58,6 +58,15 @@
   100% { transform: scale(1); }
 }
 
+@keyframes blink-color {
+  0% {
+    color: red;
+  }
+  100% {
+    color: white;
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -350,6 +359,18 @@ i.fas.fa-shield-alt {
 .hero .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
   animation-fill-mode: backwards;
+}
+.hero .btn--scroll-to-emergency{
+  display: block;
+  color: red; 
+  background: none; 
+  padding: 10px 20px;
+  margin-top: 1.5rem;
+  margin-left: 8.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  animation: blink-color 1s infinite alternate;
 }
 
 /* HOME */
@@ -1112,6 +1133,10 @@ i.fas.fa-shield-alt {
 
   .hero .btn--text {
     font-size: 1rem !important;
+  }
+  .hero .btn--scroll-to-emergency{
+    font-size: 10px;
+    margin-left: 3.3rem;
   }
 
   /* HOME */

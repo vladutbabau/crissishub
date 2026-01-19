@@ -1,7 +1,9 @@
 const header = document.querySelector(".header");
 const nav = document.querySelector(".nav");
 const section2 = document.querySelector("#section--2");
+const section5 = document.querySelector("#section--5")
 const btnScrollTo = document.querySelector(".btn--scroll-to");
+const btnScrollToEmergency = document.querySelector(".btn--scroll-to-emergency");
 const modal = document.querySelector(".modal");
 const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".btn--close-modal");
@@ -41,6 +43,12 @@ btnScrollTo.addEventListener("click", function (e) {
   e.preventDefault();
 
   section2.scrollIntoView({ behavior: "smooth" });
+});
+
+btnScrollToEmergency.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  section5.scrollIntoView({ behavior: "smooth" });
 });
 
 const section1 = document.querySelector(".hero");
