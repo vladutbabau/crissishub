@@ -61,36 +61,7 @@ observer.observe(section1);
 
 // Sections reveal
 
-// const allSections = document.querySelectorAll(".section");
-// const allNavLinks = document.querySelectorAll(".nav__link");
-// const activateNavLink = function (id) {
-//   allNavLinks.forEach((link) => {
-//     link.classList.remove("active");
-//     if (link.getAttribute("href") === `#${id}`) {
-//       console.log(link);
-//       link.classList.add("active");
-//     }
-//   });
-// };
-// const revealSection = function (entries, observer) {
-//   entries.forEach((entry) => {
-//     if (!entry.isIntersecting) return;
-//     entry.target.classList.remove("section--hidden");
-//     const sectionId = entry.target.getAttribute("id");
-//     activateNavLink(sectionId);
-//     observer.unobserve(entry.target);
-//   });
-// };
 
-// const sectionObserver = new IntersectionObserver(revealSection, {
-//   root: null,
-//   threshold: 0,
-// });
-
-// allSections.forEach((section) => {
-//   sectionObserver.observe(section);
-//   section.classList.add("section--hidden");
-// });
 const allSections = document.querySelectorAll(".section");
 const allNavLinks = document.querySelectorAll(".nav__link");
 
@@ -206,7 +177,7 @@ const btnModal = document.querySelector(".btn--modal");
 btnModal.addEventListener("click", (e) => {
   e.preventDefault();
   console.log("S-a trimis");
-  let html = `<div class="solicitare">Solicitarea ta a fost trimisa cu success</div>`;
+  let html = `<div class="solicitare">Your request has been successfully submitted.</div>`;
   const modal = document.querySelector(".modal");
   modal.insertAdjacentHTML("beforeend", html);
 });
