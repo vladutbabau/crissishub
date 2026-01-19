@@ -85,7 +85,8 @@
           <li><a class="nav__link" href="#section--2">Home</a></li>
           <li><a class="nav__link" href="#section--4">About Us</a></li>
           <li><a class="nav__link" href="#section--3">Expertise</a></li>
-          <li><a class="nav__link" href="#section--5">Contact</a></li>
+          <li><a class="nav__link" href="#section--5">Emergency<span class="badge-new">New</span></a></li>
+          <li><a class="nav__link" href="#section--6">Contact</a></li>
           <li>
             <button class="btn btn-help btn--show-modal">
               Request Intervention Now
@@ -300,8 +301,7 @@
             <h2>Emergency Interventions</h2>
             <p>
               Ongoing crises require rapid intervention through
-              multidisciplinary coordination. Crisis Cell provides integrated
-              solutions through professional partnerships.
+              multidisciplinary coordination. We provide integrated solutions through professional partnerships.
             </p>
             <button class="card__toggle">
               <i class="fas fa-chevron-down"></i>
@@ -310,6 +310,61 @@
         </div>
       </div>
     </section>
+    
+    <!-- NEW SECTION EMERGENCY -->
+
+    <section class="emergency-assistance section" id="section--5">
+  <div class="container container-sm">
+    <i class="fas fa-shield-alt fa-5x"></i><br/>
+    <h2 class="emergency__title">
+      EMERGENCY ASSISTANCE FOR INSPECTIONS & MULTIDISCIPLINARY TRIAGE
+    </h2>
+
+    <p class="emergency__text">
+      Are you subject to an inspection? Don’t handle it alone.<br>
+      When state institutions come knocking, every minute counts. 
+      We provide an Emergency Multidisciplinary Triage service at a high level of excellence: 
+      describe your situation in broad terms, and we will immediately analyze the context and mobilize the right specialist 
+      (specialized lawyer, accountant expert, tax consultant, or technical expert).
+    </p>
+
+    <p class="emergency__text">
+      Upon the client's request, the team can provide on-site assistance. We do not replace state institutions. 
+      But we ensure that the right person is by your side, at the right time.
+    </p>
+
+    <div class="emergency__steps">
+      <div class="step">
+        <i class="fas fa-envelope"></i>
+        <h3>The client sends a message with the situation</h3>
+      </div>
+      <div class="step">
+        <i class="fas fa-search"></i>
+        <h3>We perform triage and identify risks</h3>
+      </div>
+      <div class="step">
+        <i class="fas fa-user-tie"></i>
+        <h3>We direct the case to a licensed professional (lawyer / expert / consultant)</h3>
+      </div>
+    </div>
+
+    <a 
+      href="https://wa.me/40756011000" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      class="btn btn--whatsapp"
+      aria-label="Send a WhatsApp message for triage and team assistance"
+    >
+      I HAVE AN INSPECTION – REQUEST TRIAGE & TEAM
+    </a>
+
+    <p class="emergency__note">
+      The service provided is for multidisciplinary triage and rapid connection with licensed professionals. 
+      We do not provide legal assistance on our own and do not intervene on behalf of the client with authorities.
+    </p>
+  </div>
+</section>
+<!-- NEW SECTION EMERGENCY -->
     <section class="about section" id="section--4">
       <div class="container container-sm">
         <h2 class="about__title">
@@ -361,7 +416,7 @@
         </p>
       </div>
     </section>
-    <section class="contact section" id="section--5">
+    <section class="contact section" id="section--6">
       <div class="container container-sm">
         <h2 class="contact__title">
           <i class="fas fa-comments"></i> CONTACT US
@@ -423,15 +478,16 @@
       </div>
     </section>
 
-    <div class="modal hidden">
-      <button class="btn--close-modal">&times;</button>
-      <h2 class="modal__header">
+    <div class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-header">
+      <button class="btn--close-modal" aria-label="Close the form">&times;</button>
+      <h2 class="modal__header" id="modal-header">
         Fill in the form and we will contact you within
         <span class="highlight">60 minutes</span>
       </h2>
-      <form class="modal__form" name="urgency" netlify>
+      <form class="modal__form" name="urgency" method="POST" data-netlify="true" netlify>
+        <input type="hidden" name="form-name" value="urgency" />
         <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required />
+        <input type="text" name="name" id="name" placeholder="Your name" />
         <label for="phone">Phone Number:</label>
         <input
           type="tel"
@@ -450,7 +506,7 @@
     </div>
     <footer class="footer">
       <div class="footer__bottom">
-        <p>&copy; 2025. All rights reserved.</p>
+        <p>&copy; 2026. All rights reserved.</p>
       </div>
     </footer>
     <div class="overlay hidden"></div>
