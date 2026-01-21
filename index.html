@@ -323,26 +323,26 @@
     </h2>
 
     <p class="emergency__text">
-      Are you subject to an inspection? Don’t handle it alone.<br>
-      When state institutions come knocking, every minute counts. 
-      We provide an Emergency Multidisciplinary Triage service at a high level of excellence: 
-      describe your situation in broad terms, and we will immediately analyze the context and mobilize the right specialist 
-      (specialized lawyer, accountant expert, tax consultant, or technical expert).
+      <i>Are you subject to an inspection? Don’t handle it alone.</i><br/>
+      <b>Fast, balanced and professional support – when you need it most.</b><br/>
+      When state institutions come knocking, every minute counts.<br/>
+      We offer you immediate access to a <b>Multidisciplinary Triage service</b>, with <b>a level of operational excellence</b>.
+Our coordination team takes messages, analyzes them in real time and contacts the right specialists for your case - lawyers, accounting experts, tax consultants, etc. - depending on the nature of the situation.
     </p>
 
     <p class="emergency__text">
-      Upon the client's request, the team can provide on-site assistance. We do not replace state institutions. 
-      But we ensure that the right person is by your side, at the right time.
+      Upon the client's request, the team can provide on-site assistance. <br/><b>We do not replace state institutions.</b><br/>
+      The institutions do their job. We make sure you have the right person by your side to help you respond professionally.
     </p>
 
     <div class="emergency__steps">
       <div class="step">
         <i class="fas fa-envelope"></i>
-        <h3>The client sends a message with the situation</h3>
+        <h3>Briefly describe your situation to us.</h3>
       </div>
       <div class="step">
         <i class="fas fa-search"></i>
-        <h3>We perform triage and identify risks</h3>
+        <h3>We triage and identify risks</h3>
       </div>
       <div class="step">
         <i class="fas fa-user-tie"></i>
@@ -357,12 +357,12 @@
       class="btn btn--whatsapp"
       aria-label="Send a WhatsApp message for triage and team assistance"
     >
-      I HAVE AN INSPECTION – REQUEST TRIAGE & TEAM
+      <b>I REQUEST EMERGENCY ASSISTANCE</b><br/>
+I WANT PROFESSIONAL SUPPORT
     </a>
 
     <p class="emergency__note">
-      The service provided is for multidisciplinary triage and rapid connection with licensed professionals. 
-      We do not provide legal assistance on our own and do not intervene on behalf of the client with authorities.
+      The service offered is one of multidisciplinary triage and rapid connection with authorized professionals. We act promptly to connect the client with authorized professionals. We respect the legal framework and do not provide legal services in our own name.
     </p>
   </div>
 </section>
@@ -430,7 +430,8 @@
           you as soon as possible.
         </p>
 
-        <form class="contact__form" name="contact" netlify>
+        <form class="contact__form" name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
           <div class="form-group">
             <label for="first-name" class="visually-hidden">First Name</label>
             <input
@@ -486,7 +487,7 @@
         Fill in the form and we will contact you within
         <span class="highlight">60 minutes</span>
       </h2>
-      <form class="modal__form" name="urgency" method="POST" data-netlify="true" netlify>
+      <form class="modal__form" name="urgency" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="urgency" />
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" placeholder="Your name" />
