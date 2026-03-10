@@ -1,0 +1,15 @@
+{
+  "name": "Aplicatia Mea",
+  "short_name": "App",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "/images/cdecriZa.jpg",
+      "sizes": "192x192 512x512 1024x1024",
+      "type": "image/jpg"
+    }
+  ]
+}
